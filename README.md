@@ -5,6 +5,6 @@ Check to see if all services in a cloud are operational.
 Right now, the checker just checks if all services in Azure are up. This is a console application.
 
 To run the application:
-`go build cloudstatuscheck.go`
+1. `go build cloudstatuscheck.go`
 
-`cloudstatuscheck --azure`
+2. `cloudstatuscheck --azure`
