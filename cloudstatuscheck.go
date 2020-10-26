@@ -19,7 +19,7 @@ func main() {
 	}
 }
 
-func azureStatus() {
+func azureStatus() string {
 	response, err := http.Get("https://status.azure.com")
 	defer response.Body.Close()
 
@@ -41,4 +41,6 @@ func azureStatus() {
 	} else {
 		log.Println("All Azure Services Are Operational")
 	}
+	
+	return ""
 }
